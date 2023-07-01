@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "09b61d51-d7a6-41ad-bc08-61176c284797",
+		"name": "AmobaTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8170708"
+	},
+	"item": [
+		{
+			"name": "localhost/api/routes/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost/api/routes/",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"routes",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/api/calendars/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost/api/calendars/1?type=route&route_id=1",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"calendars",
+						"1"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "route"
+						},
+						{
+							"key": "route_id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/api/calendars/{calendar}",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost/api/calendars/1?type=route&type=dates",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"calendars",
+						"1"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "route",
+							"description": "date | dates | route"
+						},
+						{
+							"key": "date",
+							"value": "2023-07-05",
+							"disabled": true
+						},
+						{
+							"key": "date_start",
+							"value": "2023-07-05",
+							"disabled": true
+						},
+						{
+							"key": "date_end",
+							"value": "2023-07-15",
+							"disabled": true
+						},
+						{
+							"key": "route_id",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "type",
+							"value": "dates"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
